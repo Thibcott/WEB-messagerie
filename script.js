@@ -33,10 +33,7 @@ function onload() {
         getMessage();
     },3000);
     
-  
-    
-   
-    
+
     User = prompt("Please enter your name:", "thib");
     //GET pour optennir la date du jour
     fetch('http://localhost:3000/dateDuJour')
