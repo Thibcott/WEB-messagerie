@@ -91,11 +91,6 @@ footer>div>button:hover{
   margin: 10px 0;
 }
 
-.darker {
-  border-color: #ccc;
-  background-color: #ddd;
-}
-
 .container::after {
   content: "";
   clear: both;
@@ -114,11 +109,6 @@ footer>div>button:hover{
   float: right;
   margin-left: 20px;
   margin-right:0;
-}
-
-.time-right {
-  float: right;
-  color: #aaa;
 }
 
 .time-left {

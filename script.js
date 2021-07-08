@@ -2,7 +2,6 @@ let i = true;
 let User = "defuser";
 
 function btnSend() {
-    // let message = document.getElementById("myText").value;
     let message = {
         "text": document.getElementById("myText").value,
         "user": User
@@ -22,8 +21,8 @@ function btnSend() {
             console.log(errorThrown);
         }
     }).then(
-        alert("message envoyer"),
-        getMessage()
+        // alert("message envoyer"),
+        // getMessage()
     );
 }
 
@@ -34,7 +33,7 @@ function onload() {
     },3000);
     
 
-    User = prompt("Please enter your name:", "thib");
+    User = prompt("Please enter your name:", "defuser");
     //GET pour optennir la date du jour
     fetch('http://localhost:3000/dateDuJour')
         .then(response => response.json())
@@ -43,13 +42,10 @@ function onload() {
             console.log("GET pour optenir la date du jour : ");
             console.log(response.date);
         })
-
 }
-
 
 function getMessage() {
     //get pour recupere les messages
-  
     fetch('http://localhost:3000/getMessage')
     .then(response => response.json())
     .then(response => {
@@ -69,8 +65,6 @@ function getMessage() {
         //sortie affichage
         document.getElementById("conv").innerHTML = html;
     });
- 
-    
 }
 // style logique
 $(function() {
